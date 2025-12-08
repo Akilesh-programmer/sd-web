@@ -5,28 +5,29 @@
 
 export const COMPANY_INFO = {
   name: "Shri Dhanalakshmi",
-  fullName: "Shri Dhanalakshmi Mill",
-  tagline: "Excellence in Textile Manufacturing",
-  established: "1985", // Update with actual year
+  fullName: "Shri Dhanalakshmi Groups",
+  tagline: "100% Quality Yarn Producers",
+  established: "1990s", // 3 decades of experience
 
   contact: {
-    email: "info@shridhanalakshmimil.com", // Update with actual
-    phone: "+91 XXX XXX XXXX", // Update with actual
+    email: "info@shridhanalakshmi.com",
+    phone: "+91 422 XXX XXXX",
+    brochure: "/brochure.pdf",
     address: {
-      line1: "Address Line 1",
-      line2: "Address Line 2",
-      city: "City",
-      state: "State",
-      pincode: "XXXXXX",
+      line1: "Coimbatore - Salem National Highways",
+      line2: "Karumathampatti",
+      city: "Coimbatore",
+      state: "Tamil Nadu",
+      pincode: "641XXX",
       country: "India",
     },
   },
 
   social: {
-    facebook: "#",
-    twitter: "#",
-    linkedin: "#",
-    instagram: "#",
+    facebook: "https://facebook.com/shridhanalakshmi",
+    twitter: "https://twitter.com/shridhanalakshmi",
+    linkedin: "https://linkedin.com/company/shridhanalakshmi",
+    instagram: "https://instagram.com/shridhanalakshmi",
   },
 };
 
@@ -38,27 +39,33 @@ export const SERVICES = [
     id: "spinning",
     name: "Spinning",
     description:
-      "High-quality yarn production using state-of-the-art spinning technology",
+      "Premium quality yarn production with ultra-modern machinery and 100% renewable energy",
     icon: "🧵",
+    image: "spinning-placeholder.jpg",
+  },
+  {
+    id: "sizing",
+    name: "Sizing",
+    description:
+      "Precision sizing processes ensuring optimal fabric strength and quality",
+    icon: "📏",
+    image: "sizing-placeholder.jpg",
   },
   {
     id: "weaving",
     name: "Weaving",
     description:
-      "Advanced weaving facilities producing premium textile fabrics",
+      "Advanced weaving facilities producing premium textile fabrics with excellence",
     icon: "🪡",
-  },
-  {
-    id: "sizing",
-    name: "Sizing",
-    description: "Precision sizing processes ensuring optimal fabric strength",
-    icon: "📏",
+    image: "weaving-placeholder.jpg",
   },
   {
     id: "windmill",
-    name: "Windmill",
-    description: "Sustainable energy generation through wind power",
+    name: "Wind Mill",
+    description:
+      "100% renewable energy generation through sustainable wind power",
     icon: "🌬️",
+    image: "windmill-placeholder.jpg",
   },
 ];
 
@@ -67,11 +74,13 @@ export const SERVICES = [
  */
 export const NAV_ITEMS = [
   { name: "Home", path: "/" },
-  { name: "About", path: "/about" },
-  { name: "Services", path: "/services" },
-  { name: "Products", path: "/products" },
-  { name: "Sustainability", path: "/sustainability" },
-  { name: "Contact", path: "/contact" },
+  { name: "About Us", path: "/about" },
+  { name: "Spinning", path: "/spinning" },
+  { name: "Sizing", path: "/sizing" },
+  { name: "Weaving", path: "/weaving" },
+  { name: "Wind Mill", path: "/windmill" },
+  { name: "Gallery", path: "/gallery" },
+  { name: "Contact Us", path: "/contact" },
 ];
 
 /**

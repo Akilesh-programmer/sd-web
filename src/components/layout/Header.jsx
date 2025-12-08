@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { COMPANY_INFO, NAV_ITEMS } from "../../constants";
+import TopBar from "./TopBar";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -11,6 +12,7 @@ const Header = () => {
 
   return (
     <header className="bg-white shadow-md sticky top-0 z-50">
+      <TopBar />
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
@@ -39,7 +41,9 @@ const Header = () => {
                 {item.name}
               </Link>
             ))}
-            <button className="btn-primary">Get Quote</button>
+            <Link to="/contact" className="btn-primary">
+              Get Quote
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -80,7 +84,13 @@ const Header = () => {
                   {item.name}
                 </Link>
               ))}
-              <button className="btn-primary w-full">Get Quote</button>
+              <Link
+                to="/contact"
+                className="btn-primary w-full text-center"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Get Quote
+              </Link>
             </div>
           </div>
         )}
