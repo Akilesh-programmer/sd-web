@@ -19,28 +19,43 @@ const About = () => {
           {/* Company Overview */}
           <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12 mb-12">
             <p className="text-lg text-neutral-700 leading-relaxed mb-6">
-              <strong className="text-primary-700">SHRI DHANALAKSHMI GROUPS</strong> is having an installed capacity of{" "}
-              <strong>33,000 Spindles</strong>, <strong>4 Automatic Sizing Units</strong>,{" "}
-              <strong>36 Shuttle Less Looms</strong> and <strong>70 Wind Mills</strong> with the capacity of around{" "}
+              <strong className="text-primary-700">
+                SHRI DHANALAKSHMI GROUPS
+              </strong>{" "}
+              is having an installed capacity of{" "}
+              <strong>33,000 Spindles</strong>,{" "}
+              <strong>4 Automatic Sizing Units</strong>,{" "}
+              <strong>36 Shuttle Less Looms</strong> and{" "}
+              <strong>70 Wind Mills</strong> with the capacity of around{" "}
               <strong>45.00 MW</strong>.
             </p>
 
             {/* Key Statistics */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-8">
               <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-primary-600 mb-2">33K</div>
+                <div className="text-3xl md:text-4xl font-bold text-primary-600 mb-2">
+                  33K
+                </div>
                 <div className="text-sm text-neutral-600">Spindles</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-secondary-600 mb-2">4</div>
+                <div className="text-3xl md:text-4xl font-bold text-secondary-600 mb-2">
+                  4
+                </div>
                 <div className="text-sm text-neutral-600">Sizing Units</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-accent-600 mb-2">36</div>
-                <div className="text-sm text-neutral-600">Shuttle Less Looms</div>
+                <div className="text-3xl md:text-4xl font-bold text-accent-600 mb-2">
+                  36
+                </div>
+                <div className="text-sm text-neutral-600">
+                  Shuttle Less Looms
+                </div>
               </div>
               <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-primary-600 mb-2">45 MW</div>
+                <div className="text-3xl md:text-4xl font-bold text-primary-600 mb-2">
+                  45 MW
+                </div>
                 <div className="text-sm text-neutral-600">Wind Power</div>
               </div>
             </div>
@@ -55,10 +70,20 @@ const About = () => {
                   {/* Placeholder for Image */}
                   <div className="w-64 h-64 bg-gradient-to-br from-neutral-200 to-neutral-300 rounded-2xl flex items-center justify-center shadow-xl">
                     <div className="text-center">
-                      <svg className="w-32 h-32 mx-auto text-neutral-400" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd"/>
+                      <svg
+                        className="w-32 h-32 mx-auto text-neutral-400"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                          clipRule="evenodd"
+                        />
                       </svg>
-                      <span className="text-sm text-neutral-500 mt-2 block">Founder Photo</span>
+                      <span className="text-sm text-neutral-500 mt-2 block">
+                        Founder Photo
+                      </span>
                     </div>
                   </div>
                   {/* Decorative Elements */}
@@ -78,8 +103,12 @@ const About = () => {
                   Mr. C. Natarajan
                 </h2>
                 <p className="text-lg text-neutral-700 leading-relaxed">
-                  A <strong>dynamic entrepreneur</strong> and seasoned businessman who promoted all the constituents of SDSSM with his vast experience in the textiles field. With{" "}
-                  <strong>over 4 decades</strong> of experience in business, his visionary leadership has been instrumental in establishing the group as one of South India's leading textile manufacturers.
+                  A <strong>dynamic entrepreneur</strong> and seasoned
+                  businessman who promoted all the constituents of SDSSM with
+                  his vast experience in the textiles field. With{" "}
+                  <strong>over 4 decades</strong> of experience in business, his
+                  visionary leadership has been instrumental in establishing the
+                  group as one of South India's leading textile manufacturers.
                 </p>
               </div>
             </div>
@@ -98,21 +127,30 @@ const About = () => {
                   Company Formation
                 </h3>
                 <p className="text-neutral-700 leading-relaxed mb-4">
-                  <strong>SHRI DHANALAKSHMI SPINNTEX PRIVATE LIMITED</strong> was incorporated by converting the erstwhile partnership firm,{" "}
-                  <strong>SRI DHANALAKSHMI SIZING AND SPINNING MILL</strong>. Sri Dhanalakshmi Sizing and Spinning Mills (SDSSM) was the merged entity of the following three business entities:
+                  <strong>SHRI DHANALAKSHMI SPINNTEX PRIVATE LIMITED</strong>{" "}
+                  was incorporated by converting the erstwhile partnership firm,{" "}
+                  <strong>SRI DHANALAKSHMI SIZING AND SPINNING MILL</strong>.
+                  Sri Dhanalakshmi Sizing and Spinning Mills (SDSSM) was the
+                  merged entity of the following three business entities:
                 </p>
                 <div className="grid md:grid-cols-3 gap-4 mt-6">
                   <div className="bg-primary-50 rounded-lg p-4 text-center">
                     <div className="text-2xl mb-2">🧵</div>
-                    <div className="font-semibold text-primary-800">Sri Dhanalakshmi Sizing Mills</div>
+                    <div className="font-semibold text-primary-800">
+                      Sri Dhanalakshmi Sizing Mills
+                    </div>
                   </div>
                   <div className="bg-primary-50 rounded-lg p-4 text-center">
                     <div className="text-2xl mb-2">🪡</div>
-                    <div className="font-semibold text-primary-800">Sri Dhanalakshmi Textiles</div>
+                    <div className="font-semibold text-primary-800">
+                      Sri Dhanalakshmi Textiles
+                    </div>
                   </div>
                   <div className="bg-primary-50 rounded-lg p-4 text-center">
                     <div className="text-2xl mb-2">⚙️</div>
-                    <div className="font-semibold text-primary-800">Sri Dhanalakshmi Spinning Mills</div>
+                    <div className="font-semibold text-primary-800">
+                      Sri Dhanalakshmi Spinning Mills
+                    </div>
                   </div>
                 </div>
               </div>
@@ -124,10 +162,15 @@ const About = () => {
                   Green Energy Initiative
                 </h3>
                 <p className="text-neutral-700 leading-relaxed mb-4">
-                  With the manufacturing level reaching substantial heights, the consumption of electricity reached very high levels. As the cost of electricity became substantial, SDSSM installed wind mills for captive consumption.
+                  With the manufacturing level reaching substantial heights, the
+                  consumption of electricity reached very high levels. As the
+                  cost of electricity became substantial, SDSSM installed wind
+                  mills for captive consumption.
                 </p>
                 <p className="text-neutral-700 leading-relaxed">
-                  With the continuous demand for electricity in Tamil Nadu, SDSSM entered into the power trading business and set up more wind mills in South Tamil Nadu.
+                  With the continuous demand for electricity in Tamil Nadu,
+                  SDSSM entered into the power trading business and set up more
+                  wind mills in South Tamil Nadu.
                 </p>
               </div>
 
@@ -138,12 +181,18 @@ const About = () => {
                   Shri Dhanalakshmi Green Energy India Pvt. Ltd.
                 </h3>
                 <p className="text-neutral-700 leading-relaxed mb-4">
-                  With the experience in Wind Power Generation and trading, a new company was incorporated for wind power business in the name of{" "}
-                  <strong>M/S SHRI DHANALAKSHMI GREEN ENERGY INDIA PVT. LTD. (SDGEIPL)</strong> consisting of the same board of Directors.
+                  With the experience in Wind Power Generation and trading, a
+                  new company was incorporated for wind power business in the
+                  name of{" "}
+                  <strong>
+                    M/S SHRI DHANALAKSHMI GREEN ENERGY INDIA PVT. LTD. (SDGEIPL)
+                  </strong>{" "}
+                  consisting of the same board of Directors.
                 </p>
                 <div className="bg-secondary-50 rounded-lg p-4 mt-4">
                   <p className="text-secondary-900 font-semibold">
-                    Now this company SDGEIPL is having <strong>11 MW</strong> capacity.
+                    Now this company SDGEIPL is having <strong>11 MW</strong>{" "}
+                    capacity.
                   </p>
                 </div>
               </div>
@@ -163,7 +212,8 @@ const About = () => {
               <div className="text-xl mt-2">Units Per Annum</div>
             </div>
             <p className="text-lg text-primary-50 max-w-3xl mx-auto">
-              By using more than <strong>45 MW wind turbines</strong> to meet your requirements with 100% renewable energy
+              By using more than <strong>45 MW wind turbines</strong> to meet
+              your requirements with 100% renewable energy
             </p>
           </div>
         </div>
@@ -184,7 +234,8 @@ const About = () => {
                 Quality Excellence
               </h3>
               <p className="text-neutral-600">
-                Committed to delivering 100% quality yarn with state-of-the-art technology and rigorous quality control
+                Committed to delivering 100% quality yarn with state-of-the-art
+                technology and rigorous quality control
               </p>
             </div>
 
@@ -196,7 +247,8 @@ const About = () => {
                 Sustainability
               </h3>
               <p className="text-neutral-600">
-                Leading the way in green manufacturing with 100% renewable wind energy powering our operations
+                Leading the way in green manufacturing with 100% renewable wind
+                energy powering our operations
               </p>
             </div>
 
@@ -208,7 +260,8 @@ const About = () => {
                 Customer Focus
               </h3>
               <p className="text-neutral-600">
-                Four decades of trust built on understanding and meeting customer requirements at every level
+                Four decades of trust built on understanding and meeting
+                customer requirements at every level
               </p>
             </div>
           </div>
