@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Spinning from "./pages/Spinning";
 import Sizing from "./pages/Sizing";
+import Weaving from "./pages/Weaving";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/spinning" element={<Spinning />} />
           <Route path="/sizing" element={<Sizing />} />
+          <Route path="/weaving" element={<Weaving />} />
           {/* Add more routes here as you create pages */}
         </Route>
       </Routes>
