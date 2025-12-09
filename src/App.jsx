@@ -3,6 +3,7 @@ import Layout from "./components/layout/Layout";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Spinning from "./pages/Spinning";
+import Sizing from "./pages/Sizing";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/spinning" element={<Spinning />} />
+          <Route path="/sizing" element={<Sizing />} />
           {/* Add more routes here as you create pages */}
         </Route>
       </Routes>

@@ -1,13 +1,18 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { COMPANY_INFO, NAV_ITEMS } from "../../constants";
 import TopBar from "./TopBar";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const isActive = (path) => {
+    return location.pathname === path;
   };
 
   return (
@@ -36,7 +41,11 @@ const Header = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className="text-neutral-700 hover:text-primary-600 font-medium transition-colors duration-200"
+                className={`font-medium transition-colors duration-200 ${
+                  isActive(item.path)
+                    ? "text-primary-600 border-b-2 border-primary-600"
+                    : "text-neutral-700 hover:text-primary-600"
+                }`}
               >
                 {item.name}
               </Link>
@@ -78,7 +87,11 @@ const Header = () => {
                 <Link
                   key={item.path}
                   to={item.path}
-                  className="text-neutral-700 hover:text-primary-600 font-medium transition-colors duration-200 py-2"
+                  className={`font-medium transition-colors duration-200 py-2 ${
+                    isActive(item.path)
+                      ? "text-primary-600 font-semibold"
+                      : "text-neutral-700 hover:text-primary-600"
+                  }`}
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {item.name}
