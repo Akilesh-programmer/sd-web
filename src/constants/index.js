@@ -11,21 +11,20 @@ export const COMPANY_INFO = {
 
   contact: {
     email: "info@shridhanalakshmi.com",
-    phone: "+91 422 XXX XXXX",
+    phone: "0421 - 2333546",
     brochure: "/brochure.pdf",
     address: {
-      line1: "Coimbatore - Salem National Highways",
-      line2: "Karumathampatti",
-      city: "Coimbatore",
+      line1: "S.F. NO. 226/3, NH-47, Avinashi Road",
+      line2: "Karumathampatti - 641 659",
+      city: "Coimbatore (Dt)",
       state: "Tamil Nadu",
-      pincode: "641XXX",
       country: "India",
     },
   },
 
   social: {
     facebook: "https://facebook.com/shridhanalakshmi",
-    twitter: "https://twitter.com/shridhanalakshmi",
+    x: "https://x.com/shridhanalakshmi",
     linkedin: "https://linkedin.com/company/shridhanalakshmi",
     instagram: "https://instagram.com/shridhanalakshmi",
   },
