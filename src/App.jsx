@@ -5,6 +5,7 @@ import About from "./pages/About";
 import Spinning from "./pages/Spinning";
 import Sizing from "./pages/Sizing";
 import Weaving from "./pages/Weaving";
+import WindMill from "./pages/WindMill";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/spinning" element={<Spinning />} />
           <Route path="/sizing" element={<Sizing />} />
           <Route path="/weaving" element={<Weaving />} />
+          <Route path="/windmill" element={<WindMill />} />
           {/* Add more routes here as you create pages */}
         </Route>
       </Routes>
