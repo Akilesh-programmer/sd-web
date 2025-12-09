@@ -68,7 +68,7 @@ const Contact = () => {
   ];
 
   return (
-    <div className="bg-neutral-50">
+    <div className="bg-neutral-50 overflow-x-hidden">
       {/* Hero Section */}
       <section className="relative h-[300px] md:h-[400px] bg-gradient-to-br from-primary-700 via-secondary-600 to-accent-600 overflow-hidden">
         <div className="absolute inset-0 opacity-20">
@@ -93,12 +93,12 @@ const Contact = () => {
       </section>
 
       {/* Contact Form and Info Section */}
-      <section className="section-container">
+      <section className="section-container px-4">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 mb-12 lg:items-start">
+          <div className="grid lg:grid-cols-2 gap-6 md:gap-12 mb-8 md:mb-12 lg:items-start">
             {/* Contact Form */}
-            <div className="bg-white rounded-2xl shadow-lg p-8 md:p-10 flex flex-col h-full">
-              <h2 className="text-3xl font-display font-bold text-neutral-800 mb-6">
+            <div className="bg-white rounded-2xl shadow-lg p-4 sm:p-6 md:p-8 lg:p-10 flex flex-col h-full">
+              <h2 className="text-2xl sm:text-3xl font-display font-bold text-neutral-800 mb-6">
                 Send us a Message
               </h2>
               <form onSubmit={handleSubmit} className="space-y-6">
@@ -214,8 +214,8 @@ const Contact = () => {
 
             {/* Contact Information */}
             <div className="flex flex-col h-full">
-              <div className="bg-white rounded-2xl shadow-lg p-8 md:p-10 flex-1">
-                <h2 className="text-3xl font-display font-bold text-neutral-800 mb-6">
+              <div className="bg-white rounded-2xl shadow-lg p-4 sm:p-6 md:p-8 lg:p-10 flex-1">
+                <h2 className="text-2xl sm:text-3xl font-display font-bold text-neutral-800 mb-6">
                   Contact Information
                 </h2>
 
@@ -225,11 +225,11 @@ const Contact = () => {
                     <div className="flex-shrink-0 w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mr-4">
                       <span className="text-2xl">📍</span>
                     </div>
-                    <div>
+                    <div className="min-w-0 flex-1">
                       <h3 className="font-semibold text-neutral-800 mb-2">
                         Address
                       </h3>
-                      <p className="text-neutral-600 leading-relaxed">
+                      <p className="text-neutral-600 leading-relaxed text-sm">
                         S.F. NO. 226/3, NH-47,
                         <br />
                         AVINASHI ROAD, KARUMATHAMPATTI,
@@ -246,7 +246,7 @@ const Contact = () => {
                     <div className="flex-shrink-0 w-12 h-12 bg-secondary-100 rounded-full flex items-center justify-center mr-4">
                       <span className="text-2xl">🌐</span>
                     </div>
-                    <div>
+                    <div className="min-w-0 flex-1">
                       <h3 className="font-semibold text-neutral-800 mb-2">
                         Website
                       </h3>
@@ -254,7 +254,7 @@ const Contact = () => {
                         href="http://www.shridhanalakshmi.com"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-primary-600 hover:text-primary-700 font-medium"
+                        className="text-primary-600 hover:text-primary-700 font-medium break-all"
                       >
                         www.shridhanalakshmi.com
                       </a>
@@ -268,13 +268,13 @@ const Contact = () => {
                     <div className="flex-shrink-0 w-12 h-12 bg-accent-100 rounded-full flex items-center justify-center mr-4">
                       <span className="text-2xl">📧</span>
                     </div>
-                    <div>
+                    <div className="min-w-0 flex-1">
                       <h3 className="font-semibold text-neutral-800 mb-2">
                         Email
                       </h3>
                       <a
                         href="mailto:dhanalakshmispinntex@gmail.com"
-                        className="text-primary-600 hover:text-primary-700 font-medium"
+                        className="text-primary-600 hover:text-primary-700 font-medium break-all"
                       >
                         dhanalakshmispinntex@gmail.com
                       </a>
@@ -288,7 +288,7 @@ const Contact = () => {
                     <div className="flex-shrink-0 w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mr-4">
                       <span className="text-2xl">📞</span>
                     </div>
-                    <div className="flex-1">
+                    <div className="flex-1 min-w-0">
                       <h3 className="font-semibold text-neutral-800 mb-3">
                         Phone Numbers
                       </h3>
@@ -296,17 +296,17 @@ const Contact = () => {
                         {contactDetails.map((contact, index) => (
                           <div
                             key={index}
-                            className="flex items-center justify-between py-2 border-b border-neutral-100 last:border-0"
+                            className="flex items-center justify-between gap-2 py-2 border-b border-neutral-100 last:border-0"
                           >
-                            <div className="flex items-center gap-2">
+                            <div className="flex items-center gap-2 flex-shrink-0">
                               <span className="text-lg">{contact.icon}</span>
-                              <span className="text-sm font-medium text-neutral-700">
+                              <span className="text-sm font-medium text-neutral-700 whitespace-nowrap">
                                 {contact.title}:
                               </span>
                             </div>
                             <a
                               href={contact.link}
-                              className="text-primary-600 hover:text-primary-700 font-medium text-sm"
+                              className="text-primary-600 hover:text-primary-700 font-medium text-sm whitespace-nowrap"
                             >
                               {contact.value}
                             </a>
@@ -322,7 +322,7 @@ const Contact = () => {
 
           {/* Social Links - Centered */}
           <div className="max-w-2xl mx-auto">
-            <div className="bg-gradient-to-r from-primary-600 to-secondary-600 rounded-2xl shadow-lg p-8 text-white text-center">
+            <div className="bg-gradient-to-r from-primary-600 to-secondary-600 rounded-2xl shadow-lg p-6 md:p-8 text-white text-center">
               <h3 className="text-xl font-semibold mb-6">Follow Us</h3>
               <div className="flex justify-center gap-6">
                 <a
@@ -395,11 +395,11 @@ const Contact = () => {
       </section>
 
       {/* Google Maps Section */}
-      <section className="section-container">
+      <section className="section-container px-4">
         <div className="max-w-7xl mx-auto">
           <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-            <div className="p-6 md:p-8 border-b border-neutral-200">
-              <h2 className="text-3xl font-display font-bold text-neutral-800 mb-2">
+            <div className="p-4 sm:p-6 md:p-8 border-b border-neutral-200">
+              <h2 className="text-2xl sm:text-3xl font-display font-bold text-neutral-800 mb-2">
                 Our Location
               </h2>
               <p className="text-neutral-600">

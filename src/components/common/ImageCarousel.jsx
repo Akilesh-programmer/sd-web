@@ -67,12 +67,12 @@ const ImageCarousel = () => {
           </div>
 
           {/* Content */}
-          <div className="relative h-full flex items-center justify-center text-center px-4">
+          <div className="relative h-full flex items-center justify-center text-center px-12 md:px-4">
             <div className="max-w-4xl">
-              <h2 className="text-4xl md:text-6xl font-display font-bold text-white mb-4 animate-fadeIn">
+              <h2 className="text-3xl md:text-6xl font-display font-bold text-white mb-4 animate-fadeIn">
                 {slide.title}
               </h2>
-              <p className="text-xl md:text-2xl text-primary-100 animate-fadeIn">
+              <p className="text-lg md:text-2xl text-primary-100 animate-fadeIn">
                 {slide.subtitle}
               </p>
             </div>
@@ -90,7 +90,7 @@ const ImageCarousel = () => {
       {/* Navigation Arrows */}
       <button
         onClick={prevSlide}
-        className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white p-3 rounded-full transition-all"
+        className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white p-2 md:p-3 rounded-full transition-all z-10"
         aria-label="Previous slide"
       >
         <svg
@@ -110,7 +110,7 @@ const ImageCarousel = () => {
 
       <button
         onClick={nextSlide}
-        className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white p-3 rounded-full transition-all"
+        className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white p-2 md:p-3 rounded-full transition-all z-10"
         aria-label="Next slide"
       >
         <svg

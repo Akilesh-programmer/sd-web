@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { SERVICES } from "../constants";
 
 const WindMill = () => {
@@ -11,7 +12,7 @@ const WindMill = () => {
   ];
 
   return (
-    <div className="bg-neutral-50">
+    <div className="bg-neutral-50 overflow-x-hidden">
       {/* Hero Section with Image */}
       <section className="relative h-[400px] md:h-[500px] bg-gradient-to-br from-accent-700 to-accent-900 overflow-hidden">
         {/* Placeholder Background Pattern */}
@@ -43,14 +44,14 @@ const WindMill = () => {
       </section>
 
       {/* Introduction Section */}
-      <section className="section-container">
+      <section className="section-container px-4">
         <div className="max-w-5xl mx-auto">
-          <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12 mb-12">
-            <div className="text-center mb-8">
+          <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8 lg:p-12 mb-12">
+            <div className="text-center mb-6 md:mb-8">
               <div className="inline-block bg-accent-100 text-accent-700 px-4 py-2 rounded-full text-sm font-semibold mb-4">
                 🌍 Renewable Energy Initiative
               </div>
-              <p className="text-xl md:text-2xl text-neutral-800 leading-relaxed mb-6">
+              <p className="text-lg md:text-xl lg:text-2xl text-neutral-800 leading-relaxed mb-6">
                 Growing concern for the{" "}
                 <strong className="text-accent-700">global warming</strong> led
                 to the world's interest in{" "}
@@ -280,23 +281,23 @@ const WindMill = () => {
       </section>
 
       {/* Our Products Section - Reused from Home */}
-      <section className="section-container">
+      <section className="section-container px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-display font-bold text-neutral-800 mb-4">
+          <div className="text-center mb-8 md:mb-12">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-neutral-800 mb-3 md:mb-4">
               Our Products
             </h2>
-            <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
+            <p className="text-base md:text-lg text-neutral-600 max-w-2xl mx-auto px-4">
               Comprehensive textile solutions with cutting-edge technology and
               sustainable practices
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
             {SERVICES.map((service) => (
               <div
                 key={service.id}
-                className="bg-white rounded-xl shadow-lg overflow-hidden group hover:shadow-2xl transition-shadow duration-300"
+                className="bg-white rounded-xl shadow-lg overflow-hidden group hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
               >
                 {/* Placeholder Image */}
                 <div className="relative h-56 bg-gradient-to-br from-primary-600 to-primary-800 overflow-hidden">
@@ -323,7 +324,10 @@ const WindMill = () => {
                     {service.name}
                   </h3>
                   <p className="text-neutral-600 mb-4">{service.description}</p>
-                  <button className="text-primary-600 hover:text-primary-700 font-medium flex items-center group">
+                  <Link
+                    to={`/${service.id}`}
+                    className="text-primary-600 hover:text-primary-700 font-medium flex items-center group"
+                  >
                     Learn More
                     <svg
                       className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"
@@ -338,7 +342,7 @@ const WindMill = () => {
                         d="M9 5l7 7-7 7"
                       />
                     </svg>
-                  </button>
+                  </Link>
                 </div>
               </div>
             ))}

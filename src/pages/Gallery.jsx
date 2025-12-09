@@ -67,9 +67,9 @@ const Gallery = () => {
   };
 
   return (
-    <div className="bg-neutral-50 min-h-screen">
+    <div className="bg-neutral-50 min-h-screen overflow-x-hidden">
       {/* Hero Section */}
-      <section className="relative h-[300px] md:h-[400px] bg-gradient-to-br from-primary-700 via-secondary-600 to-accent-600 overflow-hidden">
+      <section className="relative h-[300px] md:h-[400px] bg-gradient-to-br from-primary-700 via-accent-600 to-secondary-600 overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <div
             className="w-full h-full"
@@ -95,7 +95,7 @@ const Gallery = () => {
       <section className="section-container">
         <div className="max-w-7xl mx-auto">
           {/* Filters */}
-          <div className="bg-white rounded-2xl shadow-lg p-6 mb-12 sticky top-4 z-10">
+          <div className="bg-white rounded-2xl shadow-lg p-4 md:p-6 mb-8 md:mb-12 md:sticky md:top-4 z-10">
             <div className="flex flex-wrap justify-center gap-3 md:gap-4">
               {filters.map((filter) => (
                 <button

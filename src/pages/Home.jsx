@@ -1,17 +1,18 @@
+import { Link } from "react-router-dom";
 import { COMPANY_INFO, SERVICES } from "../constants";
 import ImageCarousel from "../components/common/ImageCarousel";
 
 const Home = () => {
   return (
-    <div className="bg-neutral-50">
+    <div className="bg-neutral-50 overflow-x-hidden">
       {/* Image Carousel */}
       <ImageCarousel />
 
       {/* Welcome Section */}
-      <section className="section-container">
+      <section className="section-container px-4">
         <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-8">
-            <h1 className="text-4xl md:text-5xl font-display font-bold text-primary-800 mb-6">
+          <div className="text-center mb-6 md:mb-8">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-primary-800 mb-4 md:mb-6">
               Welcome to SHRI DHANALAKSHMI GROUPS
             </h1>
             <div className="w-24 h-1 bg-gradient-to-r from-primary-600 to-secondary-500 mx-auto mb-8"></div>
@@ -107,23 +108,23 @@ const Home = () => {
       </section>
 
       {/* Our Products Section */}
-      <section className="bg-gradient-to-br from-neutral-100 to-neutral-50 py-16">
-        <div className="section-container">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-display font-bold text-neutral-800 mb-4">
+      <section className="bg-gradient-to-br from-neutral-100 to-neutral-50 py-12 md:py-16">
+        <div className="section-container px-4">
+          <div className="text-center mb-8 md:mb-12">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-neutral-800 mb-3 md:mb-4">
               Our Products
             </h2>
-            <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
+            <p className="text-base md:text-lg text-neutral-600 max-w-2xl mx-auto px-4">
               Comprehensive textile solutions with cutting-edge technology and
               sustainable practices
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
             {SERVICES.map((service) => (
               <div
                 key={service.id}
-                className="bg-white rounded-xl shadow-lg overflow-hidden group hover:shadow-2xl transition-shadow duration-300"
+                className="bg-white rounded-xl shadow-lg overflow-hidden group hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
               >
                 {/* Placeholder Image */}
                 <div className="relative h-56 bg-gradient-to-br from-primary-600 to-primary-800 overflow-hidden">
@@ -150,7 +151,10 @@ const Home = () => {
                     {service.name}
                   </h3>
                   <p className="text-neutral-600 mb-4">{service.description}</p>
-                  <button className="text-primary-600 hover:text-primary-700 font-medium flex items-center group">
+                  <Link
+                    to={`/${service.id}`}
+                    className="text-primary-600 hover:text-primary-700 font-medium flex items-center group"
+                  >
                     Learn More
                     <svg
                       className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"
@@ -165,7 +169,7 @@ const Home = () => {
                         d="M9 5l7 7-7 7"
                       />
                     </svg>
-                  </button>
+                  </Link>
                 </div>
               </div>
             ))}
@@ -174,9 +178,9 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="section-container">
-        <div className="bg-gradient-to-r from-primary-700 via-primary-600 to-accent-600 rounded-2xl p-12 md:p-16 text-center text-white shadow-2xl">
-          <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
+      <section className="section-container px-4">
+        <div className="bg-gradient-to-r from-primary-700 via-primary-600 to-accent-600 rounded-2xl p-8 md:p-12 lg:p-16 text-center text-white shadow-2xl">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold mb-3 md:mb-4">
             Ready to Partner with Us?
           </h2>
           <p className="text-lg md:text-xl mb-8 text-primary-50 max-w-2xl mx-auto">

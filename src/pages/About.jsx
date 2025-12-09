@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <div className="bg-neutral-50">
+    <div className="bg-neutral-50 overflow-x-hidden">
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-primary-700 via-primary-600 to-accent-600 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -17,8 +17,8 @@ const About = () => {
       <section className="section-container">
         <div className="max-w-5xl mx-auto">
           {/* Company Overview */}
-          <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12 mb-12">
-            <p className="text-lg text-neutral-700 leading-relaxed mb-6">
+          <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8 lg:p-12 mb-12">
+            <p className="text-base md:text-lg text-neutral-700 leading-relaxed mb-6">
               <strong className="text-primary-700">
                 SHRI DHANALAKSHMI GROUPS
               </strong>{" "}
@@ -63,15 +63,15 @@ const About = () => {
 
           {/* Leadership Section */}
           <div className="bg-gradient-to-br from-white to-neutral-50 rounded-2xl shadow-lg overflow-hidden mb-12">
-            <div className="grid md:grid-cols-5 gap-8 p-8 md:p-12">
+            <div className="grid md:grid-cols-5 gap-6 md:gap-8 p-6 md:p-12">
               {/* Founder Image */}
               <div className="md:col-span-2 flex justify-center items-start">
                 <div className="relative">
                   {/* Placeholder for Image */}
-                  <div className="w-64 h-64 bg-gradient-to-br from-neutral-200 to-neutral-300 rounded-2xl flex items-center justify-center shadow-xl">
+                  <div className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 bg-gradient-to-br from-neutral-200 to-neutral-300 rounded-2xl flex items-center justify-center shadow-xl">
                     <div className="text-center">
                       <svg
-                        className="w-32 h-32 mx-auto text-neutral-400"
+                        className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 mx-auto text-neutral-400"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                       >
@@ -81,14 +81,14 @@ const About = () => {
                           clipRule="evenodd"
                         />
                       </svg>
-                      <span className="text-sm text-neutral-500 mt-2 block">
+                      <span className="text-xs sm:text-sm text-neutral-500 mt-2 block">
                         Founder Photo
                       </span>
                     </div>
                   </div>
                   {/* Decorative Elements */}
-                  <div className="absolute -top-4 -right-4 w-20 h-20 bg-primary-100 rounded-full -z-10"></div>
-                  <div className="absolute -bottom-4 -left-4 w-24 h-24 bg-secondary-100 rounded-full -z-10"></div>
+                  <div className="absolute -top-3 -right-3 md:-top-4 md:-right-4 w-16 h-16 md:w-20 md:h-20 bg-primary-100 rounded-full -z-10"></div>
+                  <div className="absolute -bottom-3 -left-3 md:-bottom-4 md:-left-4 w-20 h-20 md:w-24 md:h-24 bg-secondary-100 rounded-full -z-10"></div>
                 </div>
               </div>
 
