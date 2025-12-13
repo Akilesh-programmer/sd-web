@@ -2,21 +2,21 @@
  * Theme Configuration for Shri Dhanalakshmi Mill
  *
  * Color Scheme Philosophy:
- * - Primary (Deep Blue): Represents trust, professionalism, and industrial strength
+ * - Primary (Rich Green): Represents growth, sustainability, and environmental consciousness
  * - Secondary (Gold/Amber): Symbolizes prosperity, quality, and traditional values
  * - Accent (Teal): Represents innovation, growth, and the textile industry
  *
  * This color scheme reflects the company's heritage in textile manufacturing
- * while projecting a modern, professional image.
+ * while projecting a modern, sustainable, and eco-friendly image.
  */
 
 export const theme = {
   colors: {
     primary: {
-      light: "#4d9cff",
-      main: "#0066e6",
-      dark: "#003d80",
-      darker: "#001a33",
+      light: "#4ade80",
+      main: "#22c55e",
+      dark: "#15803d",
+      darker: "#14532d",
     },
     secondary: {
       light: "#fcd34d",

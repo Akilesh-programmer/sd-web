@@ -24,25 +24,18 @@ const About = () => {
               </strong>{" "}
               is having an installed capacity of{" "}
               <strong>33,000 Spindles</strong>,{" "}
-              <strong>4 Automatic Sizing Units</strong>,{" "}
               <strong>36 Shuttle Less Looms</strong> and{" "}
               <strong>70 Wind Mills</strong> with the capacity of around{" "}
               <strong>45.00 MW</strong>.
             </p>
 
             {/* Key Statistics */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
               <div className="text-center">
                 <div className="text-3xl md:text-4xl font-bold text-primary-600 mb-2">
                   33K
                 </div>
                 <div className="text-sm text-neutral-600">Spindles</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-secondary-600 mb-2">
-                  4
-                </div>
-                <div className="text-sm text-neutral-600">Sizing Units</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl md:text-4xl font-bold text-accent-600 mb-2">
@@ -53,7 +46,7 @@ const About = () => {
                 </div>
               </div>
               <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-primary-600 mb-2">
+                <div className="text-3xl md:text-4xl font-bold text-secondary-600 mb-2">
                   45 MW
                 </div>
                 <div className="text-sm text-neutral-600">Wind Power</div>
@@ -129,17 +122,11 @@ const About = () => {
                 <p className="text-neutral-700 leading-relaxed mb-4">
                   <strong>SHRI DHANALAKSHMI SPINNTEX PRIVATE LIMITED</strong>{" "}
                   was incorporated by converting the erstwhile partnership firm,{" "}
-                  <strong>SRI DHANALAKSHMI SIZING AND SPINNING MILL</strong>.
-                  Sri Dhanalakshmi Sizing and Spinning Mills (SDSSM) was the
-                  merged entity of the following three business entities:
+                  <strong>SRI DHANALAKSHMI SPINNING MILL</strong>. Sri
+                  Dhanalakshmi Spinning Mills (SDSSM) was the merged entity of
+                  the following two business entities:
                 </p>
-                <div className="grid md:grid-cols-3 gap-4 mt-6">
-                  <div className="bg-primary-50 rounded-lg p-4 text-center">
-                    <div className="text-2xl mb-2">🧵</div>
-                    <div className="font-semibold text-primary-800">
-                      Sri Dhanalakshmi Sizing Mills
-                    </div>
-                  </div>
+                <div className="grid md:grid-cols-2 gap-4 mt-6">
                   <div className="bg-primary-50 rounded-lg p-4 text-center">
                     <div className="text-2xl mb-2">🪡</div>
                     <div className="font-semibold text-primary-800">

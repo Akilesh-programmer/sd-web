@@ -6,7 +6,6 @@ const Gallery = () => {
   const filters = [
     { id: "all", name: "All", icon: "🎯" },
     { id: "spinning", name: "Spinning", icon: "🧵" },
-    { id: "sizing", name: "Sizing", icon: "📏" },
     { id: "weaving", name: "Weaving", icon: "🧶" },
     { id: "windmill", name: "Wind Mill", icon: "🌬️" },
   ];
@@ -18,22 +17,20 @@ const Gallery = () => {
     { id: 3, category: "spinning" },
     { id: 4, category: "spinning" },
     { id: 5, category: "spinning" },
-
-    // Sizing images
-    { id: 6, category: "sizing" },
-    { id: 7, category: "sizing" },
-    { id: 8, category: "sizing" },
-    { id: 9, category: "sizing" },
-    { id: 10, category: "sizing" },
+    { id: 6, category: "spinning" },
+    { id: 7, category: "spinning" },
 
     // Weaving images
+    { id: 8, category: "weaving" },
+    { id: 9, category: "weaving" },
+    { id: 10, category: "weaving" },
     { id: 11, category: "weaving" },
     { id: 12, category: "weaving" },
     { id: 13, category: "weaving" },
-    { id: 14, category: "weaving" },
-    { id: 15, category: "weaving" },
 
     // Wind Mill images
+    { id: 14, category: "windmill" },
+    { id: 15, category: "windmill" },
     { id: 16, category: "windmill" },
     { id: 17, category: "windmill" },
     { id: 18, category: "windmill" },
@@ -49,9 +46,8 @@ const Gallery = () => {
   const getCategoryColor = (category) => {
     const colors = {
       spinning: "from-secondary-500 to-secondary-600",
-      sizing: "from-primary-500 to-primary-600",
       weaving: "from-accent-500 to-accent-600",
-      windmill: "from-green-500 to-green-600",
+      windmill: "from-primary-500 to-primary-600",
     };
     return colors[category] || "from-neutral-500 to-neutral-600";
   };
@@ -59,7 +55,6 @@ const Gallery = () => {
   const getCategoryIcon = (category) => {
     const icons = {
       spinning: "🧵",
-      sizing: "📏",
       weaving: "🧶",
       windmill: "🌬️",
     };

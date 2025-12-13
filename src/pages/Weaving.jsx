@@ -74,7 +74,7 @@ const Weaving = () => {
                 </strong>{" "}
                 like{" "}
                 <strong className="text-primary-700">
-                  Spinning, Sizing and Energy
+                  Spinning and Energy
                 </strong>{" "}
                 helps to produce{" "}
                 <strong className="text-primary-700">

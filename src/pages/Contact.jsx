@@ -59,12 +59,6 @@ const Contact = () => {
       value: "+91 73586 33546",
       link: "tel:+917358633546",
     },
-    {
-      icon: "📏",
-      title: "Sizing",
-      value: "+91 99655 03547",
-      link: "tel:+919965503547",
-    },
   ];
 
   return (
