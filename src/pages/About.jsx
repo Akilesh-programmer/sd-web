@@ -122,9 +122,9 @@ const About = () => {
                 <p className="text-neutral-700 leading-relaxed mb-4">
                   <strong>SHRI DHANALAKSHMI SPINNTEX PRIVATE LIMITED</strong>{" "}
                   was incorporated by converting the erstwhile partnership firm,{" "}
-                  <strong>SRI DHANALAKSHMI SPINNING MILL</strong>.
-                  Sri Dhanalakshmi Spinning Mills (SDSSM) was the
-                  merged entity of the following two business entities:
+                  <strong>SRI DHANALAKSHMI SPINNING MILL</strong>. Sri
+                  Dhanalakshmi Spinning Mills (SDSSM) was the merged entity of
+                  the following two business entities:
                 </p>
                 <div className="grid md:grid-cols-2 gap-4 mt-6">
                   <div className="bg-primary-50 rounded-lg p-4 text-center">
