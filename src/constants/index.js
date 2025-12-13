@@ -43,14 +43,6 @@ export const SERVICES = [
     image: "spinning-placeholder.jpg",
   },
   {
-    id: "sizing",
-    name: "Sizing",
-    description:
-      "Precision sizing processes ensuring optimal fabric strength and quality",
-    icon: "📏",
-    image: "sizing-placeholder.jpg",
-  },
-  {
     id: "weaving",
     name: "Weaving",
     description:
@@ -75,7 +67,6 @@ export const NAV_ITEMS = [
   { name: "Home", path: "/" },
   { name: "About Us", path: "/about" },
   { name: "Spinning", path: "/spinning" },
-  { name: "Sizing", path: "/sizing" },
   { name: "Weaving", path: "/weaving" },
   { name: "Wind Mill", path: "/windmill" },
   { name: "Gallery", path: "/gallery" },
@@ -95,7 +86,6 @@ export const FOOTER_LINKS = {
   services: [
     { name: "Spinning", path: "/services/spinning" },
     { name: "Weaving", path: "/services/weaving" },
-    { name: "Sizing", path: "/services/sizing" },
     { name: "Windmill", path: "/services/windmill" },
   ],
   support: [
