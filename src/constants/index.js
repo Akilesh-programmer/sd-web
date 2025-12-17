@@ -43,12 +43,12 @@ export const SERVICES = [
     image: "spinning-placeholder.jpg",
   },
   {
-    id: "weaving",
-    name: "Weaving",
+    id: "solar",
+    name: "Solar Energy",
     description:
-      "Advanced weaving facilities producing premium textile fabrics with excellence",
-    icon: "🪡",
-    image: "weaving-placeholder.jpg",
+      "Sustainable solar power generation with cutting-edge photovoltaic technology",
+    icon: "☀️",
+    image: "solar-placeholder.jpg",
   },
   {
     id: "windmill",
@@ -67,7 +67,7 @@ export const NAV_ITEMS = [
   { name: "Home", path: "/" },
   { name: "About Us", path: "/about" },
   { name: "Spinning", path: "/spinning" },
-  { name: "Weaving", path: "/weaving" },
+  { name: "Solar Energy", path: "/solar" },
   { name: "Wind Mill", path: "/windmill" },
   { name: "Gallery", path: "/gallery" },
   { name: "Contact Us", path: "/contact" },
@@ -85,7 +85,7 @@ export const FOOTER_LINKS = {
   ],
   services: [
     { name: "Spinning", path: "/services/spinning" },
-    { name: "Weaving", path: "/services/weaving" },
+    { name: "Solar Energy", path: "/services/solar" },
     { name: "Windmill", path: "/services/windmill" },
   ],
   support: [
