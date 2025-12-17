@@ -9,7 +9,7 @@ import Layout from "./components/layout/Layout";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Spinning from "./pages/Spinning";
-import Weaving from "./pages/Weaving";
+import Solar from "./pages/Solar";
 import WindMill from "./pages/WindMill";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
@@ -34,7 +34,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/spinning" element={<Spinning />} />
-          <Route path="/weaving" element={<Weaving />} />
+          <Route path="/solar" element={<Solar />} />
           <Route path="/windmill" element={<WindMill />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
